@@ -8,9 +8,9 @@ from collections import deque
 n, m = map(int, input().split())
 
 graph = []
-dist = [[0 for _ in range(m)] for _ in range(n)]
+dist = [[0 for _ in range(m)] for _ in range(n)]  # If questions ask you for distance, create a distance array
 visited = [[False for _ in range(m)] for _ in range(n)]
-parent = [[(-1, -1) for _ in range(m)] for _ in range(n)]
+parent = [[(-1, -1) for _ in range(m)] for _ in range(n)] # If question ask you for path, create a parent array and path array
 dx = [-1, 0, 1, 0]
 dy = [0, 1, 0, -1]
 
