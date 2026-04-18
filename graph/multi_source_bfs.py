@@ -83,5 +83,12 @@ def solve():
     
     for it in dist:
         print(it)
+
+    best = dest[0]
+    for state in dest:
+        if dist[state[0]][state[1]] < dist[best[0]][best[1]]:
+            best = state 
+    
+    print(best)
     
 solve()
